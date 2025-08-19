@@ -22,12 +22,20 @@
     hyphens:auto; -webkit-hyphens:auto;
     text-align: justify;
   }
-  header.book{
-    text-align:center; margin:0 0 1rem;
-    padding-bottom:.6rem; border-bottom:1px solid #eee;
+
+  /* 🔵 BANER jak w wersji 9 */
+  header {
+    background-color: #cce5ff;   /* jasny niebieski */
+    color: #000033;              /* ciemny granatowy napis */
+    padding: 40px 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #00000033;
   }
-  header.book h1{font-size:2rem; margin:.6rem 0 .2rem}
-  header.book p{margin:.25rem 0; color:var(--muted)}
+  header h1 {
+    font-size: 42px;
+    margin: 0;
+  }
+
   h1,h2,h3,h4{line-height:1.25; margin:1.4rem 0 .6rem}
   h2{font-size:1.6rem; border-top:1px solid #eee; padding-top:1rem}
   h3{font-size:1.2rem}
@@ -55,6 +63,7 @@
   .section{
     background:#fff; border-radius:10px; padding:0; margin:0 0 1.1rem; box-shadow:none;
   }
+
   /* Print A4 */
   @media print{
     @page{ size:A4; margin: 20mm 18mm 22mm 18mm }
@@ -63,20 +72,26 @@
     a{ color:inherit; text-decoration:none }
     nav#toc{page-break-after: always}
   }
-</style>
+  </style>
 </head>
 <body>
 
-  <!-- BANER -->
-  <header class="book">
+  <!-- 🔵 BANER -->
+  <header>
     <h1>🌹 Znaki Maryi 🌹</h1>
-    <p class="small">Wersja elegancka — składowalna do PDF (A4) • GitHub Pages-ready</p>
   </header>
 
   <!-- OKŁADKA – WSTAWIONE ZDJĘCIE -->
   <div style="text-align: center; margin-top: 30px;">
-    <img src="ChatGPT%20Image%2026%20lip%202025%2C%2019_33_49.png" alt="Okładka książki" style="max-width:100%; height:auto;" />
+    <img src="ChatGPT%20Image%2026%20lip%202025%2C%2019_33_49.png" 
+         alt="Okładka książki" 
+         style="max-width:100%; height:auto;" />
   </div>
+
+</body>
+</html>
+
+
 
   <main>
 
